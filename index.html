@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>ویرگول</title>
-    <link rel="icon" href="assets/img/logo pen-01 1.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="assets/img/virgool (1).png" sizes="100x100" type="image/png">
 </head>
 
 <body class="w-full h-full bg-white-s overflow-x-hidden font-dana">
@@ -40,25 +40,27 @@
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
         </symbol>
-        <symbol id="home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </symbol>
-          
+        <symbol id="home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </symbol>
+
 
     </svg>
     <!-- header -->
-    <header class="w-full bg-white-s">
+    <header class="w-full relative top-0 right-0 z-50 lg:shadow-header bg-white-s">
         <!-- کل هدر -->
         <div class="w-full">
             <!-- کانتینر هدر -->
             <div id="header-container" class="container mx-auto ">
-                <div class="w-full flex justify-between md:shadow-header">
+                <div class="w-full flex justify-between ">
                     <!-- سمت راست هدر -->
-                    <div class="flex w-full md:w-auto">
+                    <div class="flex w-full lg:w-auto">
                         <!--  user shoping-cart fav menu -->
                         <ul class=" flex *:px-4 *:items-center ">
                             <!-- menu -->
-                            <li class="hidden md:flex relative group">
+                            <li class="hidden lg:flex relative group li-menu">
                                 <a href="#">
                                     <span>
                                         <svg class="w-5 h-5 ">
@@ -68,13 +70,13 @@
                                 </a>
                                 <!-- sub-menu -->
                                 <ul id="submenu1"
-                                    class="absolute duration-300 opacity-0 invisible right-0 top-20 group-hover:opacity-100 group-hover:visible group-hover:right-0 group-hover:top-18 bg-white-s min-w-64 max-w-64 border border-gray-200 rounded-2xl shadow-header">
+                                    class="absolute duration-100 opacity-0 invisible right-0 top-20 group-hover:opacity-100 group-hover:visible group-hover:right-0 group-hover:top-18 bg-white-s min-w-64 max-w-64 border border-gray-200 rounded-2xl shadow-header">
 
                                 </ul>
                             </li>
                             <!-- user -->
-                            <li class="hidden md:flex">
-                                <a href="">
+                            <li class="hidden lg:flex">
+                                <a href="./assets/pages/profile.html">
                                     <span>
                                         <svg class="w-5 h-5 ">
                                             <use href="#user-icon"></use>
@@ -83,7 +85,7 @@
                                 </a>
                             </li>
                             <!-- shoppingCard -->
-                            <li class="hidden md:flex">
+                            <li class="hidden lg:flex">
                                 <a href="">
                                     <span>
                                         <svg class="w-5 h-5 ">
@@ -93,7 +95,7 @@
                                 </a>
                             </li>
                             <!-- like fav -->
-                            <li class="hidden md:flex">
+                            <li class="hidden lg:flex">
                                 <a href="">
                                     <span>
                                         <svg class="w-5 h-5 ">
@@ -104,13 +106,13 @@
                             </li>
                         </ul>
                         <!-- جستجو باکس -->
-                        <div class="flex items-center relative w-full md:w-auto pt-2 md:pt-0">
-                            <div class="w-full md:w-auto px-2 md:px-0">
+                        <div class="flex items-center relative w-full lg:w-auto pt-2 lg:pt-0">
+                            <div class="w-full lg:w-auto px-2 lg:px-0">
                                 <input
-                                    class="w-full md:w-48 outline-none rounded-2xl px-2 py-1 bg-gray-s placeholder:text-sm placeholder:text-start"
+                                    class="w-full lg:w-48 outline-none rounded-2xl px-2 py-1 bg-gray-s placeholder:text-sm placeholder:text-start"
                                     type="text" placeholder="جستجو" autocomplete="off">
                             </div>
-                            <div class="absolute top-[50%] md:left-0.5 left-2.5" style="transform: translate(0,-50%);">
+                            <div class="absolute top-[50%] lg:left-0.5 left-2.5" style="transform: translate(0,-50%);">
                                 <button class="flex items-center border-none bg-transparent cursor-pointer">
                                     <span>
                                         <svg class="w-5 h-5">
@@ -123,7 +125,7 @@
                         </div>
                     </div>
                     <!--  سمت چپ هدر-->
-                    <div class="hidden md:flex items-center">
+                    <div class="hidden lg:flex items-center">
                         <!-- title - heading -->
                         <div class="h-full flex items-center pl-2">
                             <h1 class="font-semibold text-orange-90 text-sm">فروشگاه انلاین لوازم تحریر و کتاب</h1>
@@ -149,8 +151,94 @@
     </header>
     <!-- main -->
     <main class="w-full h-full bg-white-s">
-
+        <section class="w-full h-full">
+            <div class="w-full h-full flex container-slider">
+                <div class="slides w-full h-full  shrink-0 *:w-full *:h-full">
+                    <figure>
+                        <img class="w-full h-full object-cover" src="assets/img/Slider_Element_BOSS_Original_Pastel_1860x750px 1.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="slides w-full h-full shrink-0 *:w-full *:h-full">
+                    <figure>
+                        <img class="w-full h-full object-cover" src="assets/img/Rectangle 100.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="slides w-full h-full shrink-0 *:w-full *:h-full">
+                    <figure>
+                        <img class="w-full h-full object-cover" src="assets/img/Rectangle 97.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="slides w-full h-full shrink-0 *:w-full *:h-full">
+                    <figure>
+                        <img class="w-full h-full object-cover" src="assets/img/Rectangle 99.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="">
+                    <div></div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- modal & nav device mobile -->
+    <section class="w-full absolute bottom-0 ring-0 flex lg:hidden text-gray-400 ">
+        <nav class="w-full mobile-nav absolute bottom-0 ring-0 border-t border-t-gray-200 rounded-2xl">
+            <ul class="w-full flex items-center justify-evenly py-5">
+                <li>
+                    <a href="/">
+                        <span>
+                            <svg class="w-6 h-6 text-orange-90">
+                                <use href="#home"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./assets/pages/category.html">
+                        <span>
+                            <svg class="w-6 h-6">
+                                <use href="#menu-icon"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>
+                            <svg class="w-6 h-6">
+                                <use href="#user-icon"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>
+                            <svg class="w-6 h-6">
+                                <use href="#shoping-card"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>
+                            <svg class="w-6 h-6">
+                                <use href="#like-icon"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div class="modal-menu duration-100  w-screen h-screen absolute top-0 right-0 invisible opacity-0 bg-black-s -z-0">
+    </div>
+
+
     <!-- footer -->
     <footer class="w-full h-full ">
         <div>
@@ -158,6 +246,7 @@
         </div>
     </footer>
     <script src="assets/scripts/submenu.js"></script>
+    <script src="assets/scripts/slider.js"></script>
 </body>
 
 </html>
