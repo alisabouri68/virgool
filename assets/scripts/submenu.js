@@ -7,7 +7,7 @@ function addSubmenu(a) {
   li.dataset.content = a;
   li.onclick=liDataGet
   li.innerHTML = `
-     <a data-content="${a}" class="group/one flex justify-between items-center px-3 py-4 border-b border-gray-200 " href="${window.location.pathname==="/index.html"?"assets/pages/category.html":"./category.html"}">
+     <a data-content="${a}" class="group/one flex justify-between items-center px-3 py-4 border-b border-gray-200 " href="${window.location.pathname==="/index.html" || window.location.pathname=="/virgool/"?"./assets/pages/category.html":"./category.html"}">
      <span   class="text-sm group-hover/one:text-orange-90 duration-300 pointer-events-none">${a}</span>
      <span class="pointer-events-none">
          <svg class="w-4 h-4 group-hover/one:text-orange-90 duration-300 pointer-events-none">
@@ -72,7 +72,7 @@ submenuone("menu");
 }
 function breadcrumbone() {
   const local =  JSON.parse(localStorage.getItem('data'));
-  if(window.location.pathname === "/assets/pages/category.html"){
+  if(window.location.pathname === "./assets/pages/category.html" || window.location.pathname=="/virgool/"){
     breadcrumb.innerHTML=  `
   <span class="flex items-center gap-1.5 ml-6" ><svg class="w-6 h-6" ><use href="#home"></use></svg> <span class="pt-1.5" >صفحه اصلی</span></span>
   <span class="ml-5 pt-1.5"><svg class="w-6 h-6 "><use href="#arrow-left"></use></svg></span>
