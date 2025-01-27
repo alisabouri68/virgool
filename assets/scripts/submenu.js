@@ -72,7 +72,7 @@ submenuone("menu");
 }
 function breadcrumbone() {
   const local =  JSON.parse(localStorage.getItem('data'));
-  if(window.location.pathname === "./assets/pages/category.html" || window.location.pathname=="/virgool/"){
+  if(window.location.pathname === "/assets/pages/category.html" || window.location.pathname=="/virgool/assets/pages/category.html"){
     breadcrumb.innerHTML=  `
   <span class="flex items-center gap-1.5 ml-6" ><svg class="w-6 h-6" ><use href="#home"></use></svg> <span class="pt-1.5" >صفحه اصلی</span></span>
   <span class="ml-5 pt-1.5"><svg class="w-6 h-6 "><use href="#arrow-left"></use></svg></span>
