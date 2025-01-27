@@ -2778,4 +2778,7 @@
   syntax: "*";
   inherits: false;
 }
-@property
+@property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
