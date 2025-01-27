@@ -41,7 +41,7 @@ lis.addEventListener('mouseout',()=>{
     let li =document.createElement('li')
     li.onclick=liDataGet
     li.innerHTML = `
-    <a href="${window.location.pathname=="/index.html" || window.location.pathname=="/virgool/"?"assets/pages/category.html":"./category.html"}" data-content="${val}" data-bcontent="${datasetc}" class=" w-full h-full"><span class="text-sm pointer-events-none">${val}</span></a>
+    <a href="${window.location.pathname=="/index.html" || window.location.pathname=="/virgool/"?"./assets/pages/category.html":"./category.html"}" data-content="${val}" data-bcontent="${datasetc}" class=" w-full h-full"><span class="text-sm pointer-events-none">${val}</span></a>
     `;
     x[i].children[1].appendChild(li)
    })
